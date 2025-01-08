@@ -36,7 +36,13 @@ export default function RootLayout({
         <meta name="author" content="Your Name" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${inter.className} bg-[#0a192f] text-gray-300`}>
+      <body
+        className={`${inter.className} min-h-screen bg-[#0a192f] text-gray-300`}
+        style={{
+          backgroundImage: "linear-gradient(to bottom, #0a192f, #112240)",
+          backgroundAttachment: "fixed",
+        }}
+      >
         {children}
         <div
           className="hover-effect"

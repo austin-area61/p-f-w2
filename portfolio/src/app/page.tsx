@@ -13,15 +13,9 @@ export default function Home() {
       <MobileNav />
 
       <main className="lg:ml-96 flex-1 overflow-auto w-full">
-        <div className="lg:hidden text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-100 mb-2">
-            AUST<span className="inline-block -skew-x-12">I</span>N
-          </h1>
-          <h2 className="text-xl text-gray-400">Software Engineer</h2>
-        </div>
         <div className="max-w-3xl mx-auto py-20 px-6 lg:px-8">
           {/* About Section */}
-          <section id="about" className="mb-20">
+          <section id="about" className="mb-20 mt-24 lg:mt-0">
             <h2 className="text-3xl font-bold text-gray-100 mb-8">About</h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400">

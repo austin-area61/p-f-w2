@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import SocialIcons from "./social-icons";
 
 const navItems = [
   { name: "ABOUT", href: "#about" },
@@ -16,66 +17,41 @@ export default function MobileNav() {
 
   return (
     <div className="lg:hidden">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 p-2 bg-[#112240] rounded-md text-gray-100"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-
-      {isOpen && (
-        <div className="fixed inset-0 bg-[#0a192f] z-40 flex flex-col items-center justify-center p-6">
-          <h1 className="text-4xl font-bold text-gray-100 mb-2">
-            AUST<span className="inline-block -skew-x-12">I</span>N
-          </h1>
-          <h2 className="text-xl text-gray-400 mb-8">Software Engineer</h2>
-          <p className="text-gray-400 mb-8 text-center">
+      {/* Fixed header */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#0a192f] px-6 py-8">
+        <div className="flex flex-col space-y-1">
+          <h1 className="text-3xl font-bold text-gray-100">Austin Onyango</h1>
+          <h2 className="text-lg text-gray-400">Software Engineer</h2>
+          <p className="text-gray-400 text-sm mt-2">
             I build accessible, pixel-perfect digital experiences for the web.
           </p>
-          <nav className="space-y-6 mb-8">
+        </div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="absolute top-8 right-6 p-2 text-gray-100"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Navigation menu */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-[#0a192f] z-40 pt-36">
+          <nav className="px-6 space-y-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center text-gray-400 hover:text-teal-300 transition-colors group"
+                className="block text-lg text-gray-400 hover:text-teal-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="w-12 h-[1px] bg-gray-400 group-hover:w-24 group-hover:bg-teal-300 transition-all duration-300"></span>
-                <span className="ml-4">{item.name}</span>
+                {item.name}
               </Link>
             ))}
           </nav>
-          <div className="flex space-x-6 text-gray-400">
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-teal-300 transition-colors"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-teal-300 transition-colors"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-teal-300 transition-colors"
-            >
-              <Twitter size={24} />
-            </a>
-            <a
-              href="mailto:your.email@example.com"
-              className="hover:text-teal-300 transition-colors"
-            >
-              <Mail size={24} />
-            </a>
+          <div className="absolute bottom-8 left-6">
+            <SocialIcons />
           </div>
         </div>
       )}
