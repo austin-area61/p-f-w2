@@ -116,7 +116,7 @@ export default function Home() {
                   <div className="md:col-span-2">
                     <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
                       <Image
-                        src="/placeholder.svg"
+                        src="/public/images/placeholder.svg"
                         alt="Project thumbnail"
                         width={400}
                         height={225}

@@ -35,7 +35,7 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-96 bg-[#0a192f] p-12 flex flex-col lg:block hidden">
+    <aside className="fixed left-0 top-0 h-screen w-96 bg-[#0a192f] p-12 lg:flex hidden flex-col">
       <div className="flex-1">
         <h1 className="text-4xl font-bold text-gray-100 mb-2">
           Austin Onyango
@@ -92,6 +92,6 @@ export default function Sidebar() {
           <Mail size={24} />
         </a>
       </div>
-    </div>
+    </aside>
   );
 }
