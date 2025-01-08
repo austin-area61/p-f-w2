@@ -35,7 +35,7 @@ export function HoverCard({ children }: HoverCardProps) {
       ref={cardRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative p-6 rounded-lg transition-all duration-300"
+      className="relative p-1 rounded-lg transition-all duration-300"
     >
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-teal-300/20 to-blue-500/20 rounded-lg opacity-0 transition-opacity duration-300"

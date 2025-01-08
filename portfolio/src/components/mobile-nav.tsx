@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Github, Linkedin, Mail, XIcon } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const navItems = [
@@ -68,7 +68,7 @@ export default function MobileNav() {
               rel="noopener noreferrer"
               className="hover:text-teal-300 transition-colors"
             >
-              <XIcon size={24} />
+              <Twitter size={24} />
             </a>
             <a
               href="mailto:your.email@example.com"

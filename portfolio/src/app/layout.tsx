@@ -27,6 +27,15 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <title>Austin Onyango - Portfolio</title>
+        <meta
+          name="description"
+          content="This is a brief description of your website."
+        />
+        <meta name="author" content="Your Name" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={`${inter.className} bg-[#0a192f] text-gray-300`}>
         {children}
         <div

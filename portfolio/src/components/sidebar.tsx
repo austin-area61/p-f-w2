@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail, XIcon } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -54,10 +54,9 @@ export default function Sidebar() {
             >
               <span
                 className={cn(
-                  "h-[1px] bg-gray-400 transition-all duration-300",
-                  activeSection === item.href.slice(1)
-                    ? "w-24 bg-teal-300"
-                    : "w-12 group-hover:w-24 group-hover:bg-teal-300"
+                  "h-[1px] bg-gray-400 group-hover:bg-teal-300 transition-all duration-300",
+                  activeSection === item.href.slice(1) ? "w-24" : "w-12",
+                  "group-hover:w-24"
                 )}
               ></span>
               <span className="ml-4">{item.name}</span>
@@ -92,7 +91,7 @@ export default function Sidebar() {
           className="hover:text-teal-300 transition-colors"
           aria-label="Twitter Profile"
         >
-          <XIcon size={24} />
+          <Twitter size={24} />
         </a>
         <a
           href="mailto:your.email@example.com"

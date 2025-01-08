@@ -294,8 +294,9 @@ export default function Home() {
           {/* Built With Section */}
           <section className="text-center text-gray-400 text-sm">
             <p>
-              Built with Next.js, Tailwind CSS, and shadcn/ui components.
-              Deployed on Vercel.
+              Loosely designed in Figma and coded in Visual Studio Code by yours
+              truly. Built with Next.js and Tailwind CSS, deployed with Vercel.
+              All text is set in the Inter typeface.
             </p>
           </section>
         </div>
