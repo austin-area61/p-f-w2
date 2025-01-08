@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export default function SocialIcons() {
   return (
@@ -20,6 +20,15 @@ export default function SocialIcons() {
         aria-label="LinkedIn Profile"
       >
         <Linkedin size={24} />
+      </a>
+      <a
+        href="https://x.com/in/yourusername"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-teal-300 transition-colors"
+        aria-label="X Profile"
+      >
+        <Twitter size={24} />
       </a>
       <a
         href="mailto:your.email@example.com"
