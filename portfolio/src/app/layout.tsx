@@ -1,15 +1,10 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Austin Onyango | Software Engineer",
-  description:
-    "Personal portfolio of Austin Onyango, a software engineer specializing in AI, web development, and technical writing.",
-};
 
 export default function RootLayout({
   children,
