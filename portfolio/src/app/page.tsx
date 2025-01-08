@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { HoverCard } from "@/components/hover-card";
 
 export default function Home() {
   return (
@@ -24,7 +25,9 @@ export default function Home() {
                 background in AI model training and evaluation.
               </p>
               <a
-                href="/resume.pdf"
+                href="/pdf/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center text-teal-300 hover:text-teal-400 mt-8 group"
               >
                 View Full Résumé
@@ -39,71 +42,103 @@ export default function Home() {
               Experience
             </h2>
             <div className="space-y-12">
-              <div className="group">
-                <div className="text-gray-400 mb-2">April 2023 — May 2024</div>
-                <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
-                  <a href="#" className="inline-flex items-center">
-                    AI Trainer · Remotasks
-                    <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </a>
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  Trained and refined conversational AI models through
-                  systematic data curation and preprocessing. Developed and
-                  maintained detailed documentation for conversation design
-                  patterns. Conducted rigorous quality assurance assessments on
-                  AI model outputs. Established and monitored key performance
-                  metrics for AI model evaluation.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Technical Writing</Badge>
-                  <Badge variant="secondary">Multimodal Prompting</Badge>
-                  <Badge variant="secondary">Programming</Badge>
+              <HoverCard>
+                <div className="group">
+                  <div className="text-gray-400 mb-2">
+                    April 2023 — May 2024
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                    <a href="#" className="inline-flex items-center">
+                      AI Trainer · Remotasks
+                      <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                    </a>
+                  </h3>
+                  <p className="text-gray-400 mb-4">
+                    Trained and refined conversational AI models through
+                    systematic data curation and preprocessing. Developed and
+                    maintained detailed documentation for conversation design
+                    patterns. Conducted rigorous quality assurance assessments
+                    on AI model outputs. Established and monitored key
+                    performance metrics for AI model evaluation.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-teal-300">
+                      Technical Writing
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Multimodal Prompting
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Programming
+                    </Badge>
+                  </div>
                 </div>
-              </div>
+              </HoverCard>
 
-              <div className="group">
-                <div className="text-gray-400 mb-2">
-                  January 2023 — April 2023
+              <HoverCard>
+                <div className="group">
+                  <div className="text-gray-400 mb-2">
+                    January 2023 — April 2023
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                    <a href="#" className="inline-flex items-center">
+                      Information Technology Intern · AGC Tenwek Hospital
+                      <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                    </a>
+                  </h3>
+                  <p className="text-gray-400 mb-4">
+                    Created a prototype patient management system using Java.
+                    Assisted in API integration and backend maintenance.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-teal-300">
+                      Java
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Database Management
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Networking
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Teaching
+                    </Badge>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
-                  <a href="#" className="inline-flex items-center">
-                    Information Technology Intern · AGC Tenwek Hospital
-                    <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </a>
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  Created a prototype patient management system using Java.
-                  Assisted in API integration and backend maintenance.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Java</Badge>
-                  <Badge variant="secondary">Database Management</Badge>
-                  <Badge variant="secondary">Networking</Badge>
-                  <Badge variant="secondary">Teaching</Badge>
-                </div>
-              </div>
+              </HoverCard>
 
-              <div className="group">
-                <div className="text-gray-400 mb-2">April 2023 — May 2023</div>
-                <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
-                  <a href="#" className="inline-flex items-center">
-                    Front-end Developer · Tenwek Comprehensive School
-                    <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </a>
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  Developed and maintained the school's web portal using
-                  React.js. Integrated secure APIs for data handling. Improved
-                  user experience through responsive design.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">JavaScript</Badge>
-                  <Badge variant="secondary">ReactJs</Badge>
-                  <Badge variant="secondary">Responsive Design</Badge>
-                  <Badge variant="secondary">Bootstrap</Badge>
+              <HoverCard>
+                <div className="group">
+                  <div className="text-gray-400 mb-2">
+                    April 2023 — May 2023
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                    <a href="#" className="inline-flex items-center">
+                      Front-end Developer · Tenwek Comprehensive School
+                      <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                    </a>
+                  </h3>
+                  <p className="text-gray-400 mb-4">
+                    Developed and maintained the school's web portal using
+                    React.js. Integrated secure APIs for data handling. Improved
+                    user experience through responsive design.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-teal-300">
+                      JavaScript
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      ReactJs
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Responsive Design
+                    </Badge>
+                    <Badge variant="secondary" className="text-teal-300">
+                      Bootstrap
+                    </Badge>
+                  </div>
                 </div>
-              </div>
+              </HoverCard>
             </div>
           </section>
 
@@ -111,12 +146,12 @@ export default function Home() {
           <section id="projects" className="mb-20">
             <h2 className="text-3xl font-bold text-gray-100 mb-12">Projects</h2>
             <div className="space-y-12">
-              <div className="group">
+              <HoverCard>
                 <div className="grid md:grid-cols-5 gap-6 items-start">
                   <div className="md:col-span-2">
                     <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
                       <Image
-                        src="/public/images/placeholder.svg"
+                        src="/images/project-name.jpg"
                         alt="Project thumbnail"
                         width={400}
                         height={225}
@@ -138,14 +173,22 @@ export default function Home() {
                       Components, and more.
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">React</Badge>
-                      <Badge variant="secondary">Express</Badge>
-                      <Badge variant="secondary">Spotify API</Badge>
-                      <Badge variant="secondary">Heroku</Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        React
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Express
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Spotify API
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Heroku
+                      </Badge>
                     </div>
                   </div>
                 </div>
-              </div>
+              </HoverCard>
             </div>
           </section>
 
@@ -155,68 +198,98 @@ export default function Home() {
               Education
             </h2>
             <div className="space-y-8">
-              <Card className="bg-[#112240] border-none">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-100 mb-2">
-                    Kabarak University
-                  </h3>
-                  <p className="text-gray-400 mb-2">
-                    Bachelor in Business and Information Technology
-                  </p>
-                  <p className="text-gray-400 mb-4">Sep 2019 - Dec 2023</p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">MySQL</Badge>
-                    <Badge variant="secondary">Networking</Badge>
-                    <Badge variant="secondary">Team Leadership</Badge>
-                    <Badge variant="secondary">Front-End Design</Badge>
-                    <Badge variant="secondary">Java</Badge>
-                  </div>
-                </CardContent>
-              </Card>
+              <HoverCard>
+                <Card className="bg-[#112240] border-none">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                      Kabarak University
+                    </h3>
+                    <p className="text-gray-400 mb-2">
+                      Bachelor in Business and Information Technology
+                    </p>
+                    <p className="text-gray-400 mb-4">Sep 2019 - Dec 2023</p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        MySQL
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Networking
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Team Leadership
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Front-End Design
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Java
+                      </Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </HoverCard>
 
-              <Card className="bg-[#112240] border-none">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-100 mb-2">
-                    Moringa School
-                  </h3>
-                  <p className="text-gray-400 mb-2">Software Development</p>
-                  <p className="text-gray-400 mb-4">May 2021 - Dec 2021</p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">React.js</Badge>
-                    <Badge variant="secondary">JavaScript</Badge>
-                    <Badge variant="secondary">Python</Badge>
-                    <Badge variant="secondary">Django</Badge>
-                    <Badge variant="secondary">Tailwind CSS</Badge>
-                  </div>
-                </CardContent>
-              </Card>
+              <HoverCard>
+                <Card className="bg-[#112240] border-none">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                      Moringa School
+                    </h3>
+                    <p className="text-gray-400 mb-2">Software Development</p>
+                    <p className="text-gray-400 mb-4">May 2021 - Dec 2021</p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        React.js
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        JavaScript
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Python
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Django
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Tailwind CSS
+                      </Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </HoverCard>
 
-              <Card className="bg-[#112240] border-none">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-100 mb-2">
-                    ALX
-                  </h3>
-                  <p className="text-gray-400 mb-2">
-                    AI Essentials · Grade: A+
-                  </p>
-                  <p className="text-gray-400 mb-4">Mar 2024 - Apr 2024</p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">
-                      Artificial Intelligence (AI)
-                    </Badge>
-                    <Badge variant="secondary">Generative AI Tools</Badge>
-                    <Badge variant="secondary">Prompt Engineering</Badge>
-                  </div>
-                </CardContent>
-              </Card>
+              <HoverCard>
+                <Card className="bg-[#112240] border-none">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                      ALX
+                    </h3>
+                    <p className="text-gray-400 mb-2">
+                      AI Essentials · Grade: A+
+                    </p>
+                    <p className="text-gray-400 mb-4">Mar 2024 - Apr 2024</p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        Artificial Intelligence (AI)
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Generative AI Tools
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Prompt Engineering
+                      </Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </HoverCard>
             </div>
           </section>
 
           {/* Built With Section */}
           <section className="text-center text-gray-400 text-sm">
             <p>
-              Built with Next.js, Tailwind CSS, and shadcn/ui components.
-              Deployed on Vercel.
+              Designed by yours truly😊in Figma, built with Next.js, Tailwind
+              CSS,and framer-motion. Deployed on Vercel.
             </p>
           </section>
         </div>
