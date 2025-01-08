@@ -19,13 +19,25 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-100 mb-8">About</h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-gray-400">
-                I'm a passionate software engineer with expertise in AI, web
-                development, and technical writing. I specialize in creating
-                efficient, user-friendly applications and have a strong
-                background in AI model training and evaluation.
+                Hi, I’m Austin Onyango, a curious mind with a passion for
+                exploring technology, space,anatomy, philosophy, and psychology.
+                As a developer, I enjoy the challenge of solving problems and
+                creating meaningful digital experiences, but my interests extend
+                far beyond code. I’m deeply fascinated by the human
+                experience—how we think, why we act, and the bigger questions
+                about existence and the universe. Whether I’m reading about
+                stoicism, contemplating the nature of time, or diving into a
+                discussion about the cosmos, I find inspiration in understanding
+                the world and our place in it. When I’m not immersed in tech or
+                philosophical musings, you’ll often find me gaming, watching
+                documentaries, or enjoying the tranquility of a solo nature
+                walk. These moments help me recharge and spark new ideas,
+                blending creativity and logic in everything I do. For me, life
+                is about growth, meaningful connections, and creating things
+                that make an impact. If that resonates with you, let’s connect!
               </p>
               <a
-                href="/pdf/resume.pdf"
+                href="/pdf/resume.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-teal-300 hover:text-teal-400 mt-8 group"
@@ -151,7 +163,7 @@ export default function Home() {
                   <div className="md:col-span-2">
                     <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
                       <Image
-                        src="/images/project-name.jpg"
+                        src="/images/sustainopolis.png"
                         alt="Project thumbnail"
                         width={400}
                         height={225}
@@ -162,15 +174,19 @@ export default function Home() {
                   <div className="md:col-span-3">
                     <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
                       <a href="#" className="inline-flex items-center">
-                        Build a Spotify Connected App
+                        Sustainopolis
                         <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                       </a>
                     </h3>
                     <p className="text-gray-400 mb-4">
-                      Video course that teaches how to build a web app with the
-                      Spotify Web API. Topics covered include the principles of
-                      REST APIs, user auth flows, Node, Express, React, Styled
-                      Components, and more.
+                      Sustainopolis is a gamified educational platform that
+                      combines learning with real-world problem-solving.
+                      Learners tackle societal challenges in a simulated
+                      city—like pollution or urban overcrowding by applying
+                      knowledge gained from topics like waste management,
+                      renewable energy, and urban planning. The goal is to
+                      inspire critical thinking and empower users to create
+                      sustainable solutions for real-world impact.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary" className="text-teal-300">
@@ -180,10 +196,333 @@ export default function Home() {
                         Express
                       </Badge>
                       <Badge variant="secondary" className="text-teal-300">
-                        Spotify API
+                        MongoDB
                       </Badge>
                       <Badge variant="secondary" className="text-teal-300">
-                        Heroku
+                        Jupyter
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/shopease.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        ShopEase Ecommerce App
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      ShopEase is a sleek and modern e-commerce platform
+                      designed to deliver a seamless shopping experience with a
+                      focus on minimalism. This project showcases my ability to
+                      create responsive, user-friendly interfaces and implement
+                      key e-commerce functionalities.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        HTML
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        SCSS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Vanilla JS
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/fastlink.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        Fastlink.Net
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      Fastlink.net is a responsive and interactive website built
+                      with React.js, designed for Fastlink Communications, an
+                      internet service provider located in Ruiru, Kenya. This
+                      project emphasizes user experience, clean design, and
+                      efficient performance to showcase the company’s services
+                      and connect with potential customers.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        React
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        CSS Modules
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Netflify
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Git
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/menu-cafe.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        Menu-Cafe
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      Menu Café is a simple, visually appealing website designed
+                      to showcase the offerings of a cozy café. Built using only
+                      HTML and CSS, the project focuses on creating an engaging
+                      and user-friendly design that reflects the warm and
+                      inviting atmosphere of a coffee shop.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        HTML
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        CSS
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/photography-app.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        Photography App
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      It's a modern photography app built with Next.js and
+                      styled with Tailwind CSS, designed to provide
+                      photographers and photography enthusiasts with an
+                      interactive platform to explore, share, and manage
+                      stunning visuals. The app combines smooth performance with
+                      a clean and minimalist design for an engaging user
+                      experience.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        NextJs
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Tailwind CSS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        NodeJs
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        MongoDB
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/reading-lamp.jpg"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        Reading Lamp
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      Reading Lamp is a simple yet innovative mobile application
+                      designed to transform your phone screen into a reading
+                      lamp. Built as my first app project, it combines
+                      functionality and simplicity to create a practical tool
+                      for nighttime reading without straining the eyes.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        React Native
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Tailwind CSS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Expo Go
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/youtube-clone.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        YouTube Clone
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      YouTube clone application designed to provide users with a
+                      platform to upload, view, and interact with videos in a
+                      modern and responsive interface. Built with React.js and
+                      Firebase for real-time data handling, this project mimics
+                      the core functionality of YouTube while offering an
+                      opportunity to showcase my skills in building
+                      video-sharing platforms.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        ReactJs
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Firebase
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Tailwind CSS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Vercel
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </HoverCard>
+            </div>
+
+            <div className="space-y-12">
+              <HoverCard>
+                <div className="grid md:grid-cols-5 gap-6 items-start">
+                  <div className="md:col-span-2">
+                    <div className="aspect-video bg-[#112240] rounded-lg overflow-hidden">
+                      <Image
+                        src="/images/weather-app.png"
+                        alt="Project thumbnail"
+                        width={400}
+                        height={225}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-2 group-hover:text-teal-300 transition-colors">
+                      <a href="#" className="inline-flex items-center">
+                        Weather App
+                        <ArrowUpRight className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                      </a>
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                      WeatherNow is a weather application built using HTML, CSS,
+                      and JavaScript that provides users with real-time weather
+                      information based on their location or a city search. The
+                      app is designed with simplicity and responsiveness in
+                      mind, making it easy for users to get quick weather
+                      updates.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary" className="text-teal-300">
+                        HTML
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        CSS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Vanilla JS
+                      </Badge>
+                      <Badge variant="secondary" className="text-teal-300">
+                        Git
                       </Badge>
                     </div>
                   </div>
