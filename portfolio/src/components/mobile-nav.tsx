@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 const navItems = [
   { name: "ABOUT", href: "#about" },
@@ -19,7 +18,7 @@ export default function MobileNav() {
     <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 p-2 bg-[#112240] rounded-md"
+        className="fixed top-4 right-4 z-50 p-2 bg-[#112240] rounded-md text-gray-100"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
