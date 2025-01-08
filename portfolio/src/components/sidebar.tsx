@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -35,8 +35,8 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-96 bg-[#0a192f] p-12 lg:flex hidden flex-col">
-      <div className="flex-1">
+    <aside className="fixed left-0 top-0 h-screen w-96 bg-[#0a192f] p-12 lg:flex hidden flex-col justify-center">
+      <div className="flex-1 flex flex-col justify-center">
         <h1 className="text-4xl font-bold text-gray-100 mb-2">
           Austin Onyango
         </h1>
@@ -83,6 +83,15 @@ export default function Sidebar() {
           aria-label="LinkedIn Profile"
         >
           <Linkedin size={24} />
+        </a>
+        <a
+          href="https://twitter.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-teal-300 transition-colors"
+          aria-label="Twitter Profile"
+        >
+          <Twitter size={24} />
         </a>
         <a
           href="mailto:your.email@example.com"
