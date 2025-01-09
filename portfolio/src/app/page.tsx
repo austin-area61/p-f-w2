@@ -465,16 +465,16 @@ export default function Home() {
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Badge variant="secondary" className="text-teal-300">
-                        ReactJs
+                        HTML
                       </Badge>
                       <Badge variant="secondary" className="text-teal-300">
-                        Firebase
+                        CSS
                       </Badge>
                       <Badge variant="secondary" className="text-teal-300">
-                        Tailwind CSS
+                        Vanilla JS
                       </Badge>
                       <Badge variant="secondary" className="text-teal-300">
-                        Vercel
+                        Git
                       </Badge>
                     </div>
                   </div>

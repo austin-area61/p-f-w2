@@ -4,7 +4,7 @@ export default function SocialIcons() {
   return (
     <div className="flex space-x-6 text-gray-400">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/austin-area61"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-teal-300 transition-colors"
@@ -13,7 +13,7 @@ export default function SocialIcons() {
         <Github size={24} />
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/austin-onyango-area61/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-teal-300 transition-colors"
@@ -22,7 +22,7 @@ export default function SocialIcons() {
         <Linkedin size={24} />
       </a>
       <a
-        href="https://x.com/in/yourusername"
+        href="https://x.com/axwellaustin"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-teal-300 transition-colors"
@@ -31,7 +31,7 @@ export default function SocialIcons() {
         <Twitter size={24} />
       </a>
       <a
-        href="mailto:your.email@example.com"
+        href="mailto:austinonyango.area61@gmail.com"
         className="hover:text-teal-300 transition-colors"
         aria-label="Email Me"
       >
