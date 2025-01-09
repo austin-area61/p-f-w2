@@ -31,7 +31,7 @@ export default function RootLayout({
         <title>Austin Onyango - Portfolio</title>
         <meta
           name="description"
-          content="This is a brief description of your website."
+          content="This is a portfolio website showcasing my skills and experience."
         />
         <meta name="author" content="Your Name" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
