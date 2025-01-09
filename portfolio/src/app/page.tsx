@@ -131,7 +131,7 @@ export default function Home() {
                     </a>
                   </h3>
                   <p className="text-gray-400 mb-4">
-                    Developed and maintained the school's web portal using
+                    Developed and maintained the school&apos;s web portal using
                     React.js. Integrated secure APIs for data handling. Improved
                     user experience through responsive design.
                   </p>
@@ -362,7 +362,7 @@ export default function Home() {
                       </a>
                     </h3>
                     <p className="text-gray-400 mb-4">
-                      It's a modern photography app built with Next.js and
+                      It&apos;s a modern photography app built with Next.js and
                       styled with Tailwind CSS, designed to provide
                       photographers and photography enthusiasts with an
                       interactive platform to explore, share, and manage
